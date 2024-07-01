@@ -1,0 +1,120 @@
+@media screen and (max-width: 768px) {
+    .create_word{
+        font-size: 70px;
+    }
+    .let, .Something{
+        font-size: 40px;
+    }
+    .f, .m{
+        font-size: 55px;   
+        color: rgb(255, 238, 0);
+    }
+    .aqbool, .arah{
+  
+        font-size: 30px;
+         
+        margin-top: 25px;
+    }
+    .product{
+        margin-left: 0px;
+        margin-right: 0px;
+    
+    }
+}
+@media screen and (max-width: 425px){
+    /* body{
+        background-color: white;
+    } */
+    .header_mobile{
+        display: inline;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .header_lp{
+        display: none;
+       
+    }
+    .child_2{
+        padding-left: 20px;
+        max-width: max-content;
+    }
+    .create_word{
+        font-size: 50px;
+    }
+    .let, .Something{
+        font-size: 30px;
+    }
+    .f, .m{
+        font-size: 40px;   
+        color: rgb(255, 238, 0);
+    }
+    .aqbool, .arah{
+  
+        font-size: 25px;
+         
+        margin-top: 15px;
+    }
+    .product{
+        margin-left: 0px;
+        margin-right: 0px;
+    
+    }
+    .child_1{
+        padding-right: 20px;
+    }
+    .info{
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .in_iner{
+        font-size: 20px;
+    }
+    .image{
+        margin-bottom: 5px;
+    }
+    .detail{
+        overflow: hidden;
+        margin: 10px;
+        margin-top: 5px;
+    }
+    .view_font{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .product .project1{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .project1.mobile_project{
+        display: block;
+    }
+    .project1.lp{
+        display: none;
+    }
+    .see_contain a{
+        font-size: 18px;
+       height: 50px;
+       padding: 10px;
+    }
+    .talk{
+        font-size: 30px;
+    }
+    .hire{
+        font-size: 18px; 
+    }
+    .contact_me{
+        font-size: 25px;
+    } 
+    .connect{
+        font-size: 20px;
+    }   
+    .text_iner{
+      
+        font-size: 20px;
+        
+    }
+}

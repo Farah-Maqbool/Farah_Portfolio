@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farah Maqbool</title>
+    <link rel="stylesheet" href="mediaquery.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: black;
+        }
+        .parent1{
+            display: grid;
+            grid-template-columns: 1fr 1fr;    
+        }
+        header{
+            position: sticky;
+            top: -1px;
+            z-index: 100;
+            background-color: black;
+        }
+        .header_mobile{
+            display: none;
+        }
+        .menu{
+            cursor: pointer;
+        }
+        .menu_content{
+            
+            padding: 20px;
+            width: 20%;
+            width: 180px;
+            height: 180px;
+            background-color: rgb(29, 25, 25);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        
+
+        }
+        .menu_content div{
+            margin-bottom: 20px;
+            font-size: 25px;
+            color:rgb(255, 255, 255);
+            cursor: pointer;
+        }
+        .menu_content_parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 700px;
+        background: transparent;
+            position: relative;
+            
+        }
+        .menu_cross{
+            position: absolute;
+            cursor: pointer;
+            color: white;
+            top: 0;
+            right: 0;
+            font-size: 50px;
+            font-family: sans-serif;
+        }
+
+        .menu_display{
+            height: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+            background: transparent;
+            z-index: 100;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+
+            
+        }
+
+        .menu_display.open{
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+        .flexx{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;   
+        }
+        .arah{
+            margin-right: 2px;
+        }
+        .child_2{   
+            align-items: center;
+            font-size: 20px;
+        }
+        .child_2 div{
+            margin: 3%;
+        }
+        .child_1 div.lastname{
+            margin: 1%;
+        }
+        .child_2 div{
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .child_2 .contact{
+            background-color: rgb(255, 238, 0);
+            color: rgb(0, 0, 0);
+            
+        }
+        .child_2 a{
+            margin-left: 50px;
+            text-decoration: none;
+        }
+        .child_2 .show{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            transition: color 0.7s ease, background-color 0.7s ease;
+        }
+        .child_2 .show:hover{
+            background-color: rgb(255, 238, 0);
+            transition: all 0.7s ease;
+            color: rgb(0, 0, 0);
+        }
+        .f, .m{
+            font-size: 80px;   
+            color: rgb(255, 238, 0);
+        }
+        .aqbool, .arah{
+        
+            font-size: 40px;
+            color: white; 
+            margin-top: 30px;
+        }
+        .lastname{
+            justify-content: none;
+        }
+        .project_img img{
+            width: 100%;
+            height: 100%;
+        }
+        .project_img div{
+            margin-bottom: 45px;
+            transform: scale(1) translateY(0);
+            transition: transform 0.5s ease;
+        }
+        .project_img div:hover{
+            transform: scale(1.1) translateY(1.5px);
+            transition: transform 0.5s ease;
+        }
+        .project_1_img{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-right: 100px;
+            margin-left: 100px;
+            position: relative;
+        }
+        
+        .project_detail div{
+            color: white;
+            padding: 200px 40px;
+         
+        }
+        
+        .project_detail{
+            background-color: rgb(224, 179, 119);
+            height: 650px;
+            position: fixed;
+            margin-right: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            color: black;
+        }
+        .project_detail div{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="parent1 header_lp">
+        <div class="child_1 flexx">
+            <div class="lastname flexx">
+                <div class="f">F</div>
+                <div class="arah">arah</div>
+            </div>
+            <div class="lastname flexx">
+                <div class="m">M</div>
+                <div class="aqbool">aqbool</div>
+            </div>
+        </div>
+        <div class="child_2 flexx">
+            <a href="index.html"><div class="home show">Home</div></a>
+            <a href="project.html"><div class="project contact">Project</div></a>
+            <a href="contact.html"><div class="project show">Contact</div></a>
+        </div>
+    </header>
+    <header class="header_mobile parent1">
+        <div class="child_2 menu flexx">
+            <div class="home">Menu</div>
+            
+        </div>
+        <div class="child_1 flexx">
+            <div class="lastname flexx">
+                <div class="f">F</div>
+                <div class="arah">arah</div>
+            </div>
+            <div class="lastname flexx">
+                <div class="m">M</div>
+                <div class="aqbool">aqbool</div>
+            </div>
+        </div>
+        
+    </header>
+    <section>
+        <div class="project">
+            <div class="project_1">
+                
+                <div class="project_1_img">
+                    <div class="project_img">
+                        <video width="100%" height="500px" autoplay loop>
+                            <source src="images/Document - Google Chrome 2024-06-30 14-29-34.mp4" type="video/mp4">
+                        </video>
+                        <div><img src="images/p3.png" alt=""></div>
+                        <div><img src="images/p1.png" alt=""></div>
+                        <div><img src="images/p2.png" alt=""></div>
+                        <div><img src="images/p4.png" alt=""></div>
+                    </div>
+                    <div class="project_content">
+                        <div class="project_detail">
+                            <div>
+                                <h1>Project:</h1>
+                                <h1>Convert given Website into Code</h1>
+                                    <p style="font-size: 20px;">My instructor gave me a website and asked me to create one 
+                                        similar to it. I used my knowledge and expertise to build 
+                                        the website, and it wasn't easy. However, I continuously worked 
+                                        on it and completed it within four days. A major challenge I faced 
+                                        was making the website responsive. But I tackled this issue by 
+                                        focusing on understanding the original website's design first. 
+                                        Once I grasped the design, I successfully recreated the website. </p>
+                                        
+                                <h2>Key Features:</h2> 
+                                <h4 style="font-size: 20px;">Making it Responsive:</h4> <p style="font-size: 20px;">I wanted the website to look great on any device, so I used media queries to achieve this. It looks great on laptops, phones, and tablets. 
+                                    <h4 style="font-size: 20px;">Build Structure and Style:</h4><p style="font-size: 20px;"> I used HTML as the foundation and used CSS to style it.</p>
+                                <h2 >Tools:</h2>
+                                <p style="font-size: 15px;">1.HTML</p>
+                                <P style="font-size: 15px;">2.CSS</P>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                
+            </div>
+            
+        </div>
+        
+    </section>
+</body>
+</html>
+
+
